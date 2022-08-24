@@ -3,13 +3,13 @@ import PersonItem from './people/PersonItem';
 
 function Navbar() {
   return (
-    <div class='overflow-x-auto w-full'>
-      <table class='table w-full'>
+    <div className='overflow-x-auto w-full'>
+      <table className='table w-full'>
         <thead>
           <tr>
             <th>
               <label>
-                <input type='checkbox' class='checkbox' />
+                <input type='checkbox' className='checkbox' />
               </label>
             </th>
             <th>Name</th>
@@ -19,9 +19,27 @@ function Navbar() {
           </tr>
         </thead>
         <tbody>
-          <PersonItem />
-          <PersonItem />
-          <PersonItem />
+          <PersonItem
+            name='Kevin Tan'
+            location='Canada'
+            company='University of British Columbia'
+            occupation='student'
+            date='August 25, 2022'
+          />
+          {/* <PersonItem
+            name={'Kevin Tan'}
+            location={'Canada'}
+            company={'University of British Columbia'}
+            occupation={'student'}
+            date={'August 25, 2022'}
+          />
+          <PersonItem
+            name={'Kevin Tan'}
+            location={'Canada'}
+            company={'University of British Columbia'}
+            occupation={'student'}
+            date={'August 25, 2022'}
+          /> */}
         </tbody>
       </table>
     </div>
